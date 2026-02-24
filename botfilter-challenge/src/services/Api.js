@@ -20,6 +20,7 @@ export const applyToJob = async (body) => {
 
   // Realiza una petición HTTP POST al endpoint de postulación
   const res = await fetch(`${BASE_URL}/api/candidate/apply-to-job`, {
+    
     method: "POST",
 
     headers: { "Content-Type": "application/json" },
