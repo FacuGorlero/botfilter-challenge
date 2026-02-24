@@ -1,42 +1,127 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
+}
+
+.portfolio {
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 3rem 1.25rem 4rem;
+  color: #e8ecff;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hero {
+  padding: 4rem 0 3rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.eyebrow {
+  display: inline-block;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #91a2ff;
+  margin-bottom: 0.8rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  margin: 0;
+  line-height: 1.1;
 }
 
-.card {
-  padding: 2em;
+.hero-text {
+  max-width: 620px;
+  margin: 1.25rem 0 2rem;
+  color: #b9c2f6;
+  font-size: 1.1rem;
 }
 
-.read-the-docs {
-  color: #888;
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #5f7cff, #8e65ff);
+  color: white;
+}
+
+.btn-secondary {
+  border-color: #3e4d8f;
+  color: #d2d9ff;
+}
+
+.section {
+  margin-top: 2.6rem;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.9rem;
+}
+
+.about p,
+.contact p {
+  max-width: 720px;
+  color: #c0c9f8;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  border: 1px solid #313f7d;
+  border-radius: 14px;
+  padding: 1rem;
+  background: rgba(15, 22, 56, 0.65);
+  backdrop-filter: blur(3px);
+}
+
+.project-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.project-card p {
+  color: #b7c0ef;
+  font-size: 0.94rem;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0.9rem 0;
+}
+
+.tags li {
+  border: 1px solid #4352a0;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  padding: 0.25rem 0.6rem;
+  color: #c6cefb;
+}
+
+.project-link {
+  color: #98abff;
+  font-weight: 600;
+}
+
+.contact a {
+  color: #b1beff;
 }
